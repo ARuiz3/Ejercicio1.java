@@ -1,4 +1,4 @@
-public class practica20 {
+public class Practica20 {
     public static void main(String[] args) {
         int numeros = 200;
         do {

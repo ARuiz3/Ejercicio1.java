@@ -5,10 +5,17 @@ public class Practica5 {
         Scanner lector= new Scanner(System.in);
         System.out.println("introduzca el radio de la circunferéncia");
         double radio = lector.nextDouble();
-        double longitud, area;
-        double Pi = Math.PI;
-        longitud = Math.pow(radio, 2);
-        area = Pi * Math.pow(radio, 2);
-        System.out.println("La longitud de la circunferéncia és " + longitud + " y el area és " + area);
+        area(radio);
+        longitud(radio);
+    }
+    public static void area(double r){
+        double area;
+        area = Math.PI * Math.pow(r, 2);
+        System.out.println("El area de la circunferéncia és " + area);
+    }
+    public static void longitud(double r){
+        double longitud;
+        longitud = 2 * Math.PI * r;
+        System.out.println("La longitud de la circunferéncia és "+ longitud);
     }
 }

@@ -1,7 +1,7 @@
 import java.io.IOException;
 import java.util.Scanner;
 
-public class practica12 {
+public class Practica12 {
     public static void main(String[] args) throws IOException {
         Scanner lector = new Scanner(System.in);
         System.out.println("Introduzca un carácter");

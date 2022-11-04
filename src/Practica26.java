@@ -7,7 +7,7 @@ public class Practica26 {
         double[] num = new double[10];
         int i;
         double numintr ;
-        for (i = 0; i < 10; i++) {
+        for (i = 0; i < num.length; i++) {
             System.out.println("Introduce un numero");
             numintr = lector.nextDouble();
             num[i] =  numintr;
@@ -18,7 +18,7 @@ public class Practica26 {
                 contpositivo++;
             }
         }
-        for (i=0; i< 10;i++){
+        for (i=0; i< num.length;i++){
             System.out.println("Has introducido: " + num[i]);
 
         }

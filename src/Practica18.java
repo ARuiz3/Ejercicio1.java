@@ -1,10 +1,8 @@
-public class practica19 {
+public class Practica18 {
     public static void main(String[] args) {
-        byte numeros =100;
-        while(numeros>=1){
+
+        for(int numeros=200;numeros<=300;numeros++){
             System.out.println(numeros);
-            numeros--;
         }
     }
 }
-

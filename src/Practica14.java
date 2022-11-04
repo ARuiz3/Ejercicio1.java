@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Practiac14 {
+public class Practica14 {
     public static void main(String[] args) {
         Scanner lector = new Scanner(System.in);
         System.out.println("Introduce dos palabras");

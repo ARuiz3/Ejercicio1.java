@@ -6,10 +6,14 @@ public class Practica4 {
         Scanner lector = new Scanner(System.in);
         System.out.println("introduzca los grados que quiere pasar a Farenheit");
         double gradosC = lector.nextDouble();
+        calcularGrados(gradosC);
+
+    }
+    public static void calcularGrados(double g){
         double resultado;
-        if (gradosC >= -273.15) {
-            resultado = gradosC + 273.15;
-            System.out.println(gradosC + "º son igual a " + resultado + "K");
+        if (g >= -273.15) {
+            resultado = (32 + (9*g/5));
+            System.out.println(g + "º son igual a " + resultado + "K");
         }
         else {
             System.out.println("La temperatura introducida no es posible");
