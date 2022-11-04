@@ -2,13 +2,14 @@ import java.util.Random;
 
 public class ArraysEx6 {
     public static void main(String[] args) {
+        int num1=0,num2=9;
         int fila=5;
         int columna=5;
-        int matriz1[][] = new int[fila][columna];
-        int matriz2[][] = new int[fila][columna];
-        int matriz3[][] = new int[fila][columna];
-        insArray(matriz1);
-        insArray(matriz2);
+        int[][] matriz1 = new int[fila][columna];
+        int[][] matriz2 = new int[fila][columna];
+        int[][] matriz3 = new int[fila][columna];
+        insArray(matriz1,num1,num2);
+        insArray(matriz2,num1,num2);
         sumaArray(matriz1,matriz2,matriz3);
         System.out.println("La suma de la matriz 1:");
         imprimirArray(matriz1);
@@ -18,15 +19,15 @@ public class ArraysEx6 {
         imprimirArray(matriz3);
 
     }
-    private static int randomNum(){
+    private static int randomNum(int a, int b){
         Random random = new Random();
-        return random.nextInt(0,9);
+        return random.nextInt(a,b);
     }
-    public static void insArray(int[][] lista){
+    public static void insArray(int[][] lista,int a,int b){
         for (int i=0;lista.length>i;i++){
             for (int j=0;j<lista[i].length;j++){
                 int num= 0;
-                lista[i][j]=randomNum();
+                lista[i][j]=randomNum(a,b);
             }
         }
     }
